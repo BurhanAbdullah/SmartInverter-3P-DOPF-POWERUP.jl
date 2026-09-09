@@ -5,6 +5,8 @@ using HiGHS   # model construction only; see the LinDistFlow testset
 using Statistics: mean
 using Ipopt
 
+include("droop_equivalence.jl")
+
 const CASE = load_case()
 
 @testset "SmartInverterDOPF" begin
